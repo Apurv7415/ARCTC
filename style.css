@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: irctc;
+    src: url(/font/Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+
+}
+body{
+    font-family: irctc;
+    color: black;
+    box-sizing: border-box;
+    
+}
+.main{
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    overflow-x: auto;
+}
+h3{
+font-family:  irctc;
+color: black;
+font-weight: 100;
+font-weight: normal;
+}
+
+.book{
+    display: flex;
+    justify-content: space-between;
+}
+.main2{
+    padding: 0px 2px 0px 2px;
+    margin: 10px 0px 2px 0px ;
+}
+table{
+    width: 100%;    
+    display: content;
+    border-collapse: collapse   ;
+}
+th{
+    font-weight: normal;
+    padding: 5px;
+    position: relative;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap
+}
+ 
+  th::before , th::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #ccc;
+    width: 90%; /* Adjust the width of each line */
+  }
+  
+  th::after {
+    left: auto;
+    right: 0;
+  }
+  
+  @media print{
+
+    input{
+        border: 0 solid white;
+        background-color: transparent;
+    }
+    
+  input::placeholder { /* Standard placeholder style */
+    color: black; /* Example color */
+  }
+  
+  .main{
+    overflow: hidden;
+    background-color: red;
+  }
+}
+#as{
+    display: inline-block;
+}
+
+
+
+
+
